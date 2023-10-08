@@ -60,40 +60,62 @@ export default function Planet() {
   const tabs = [
     { tab: "about", component: About },
     { tab: "facts", component: KeyFacts },
-    { tab: "itinerary", component: KeyFacts },
-    { tab: "gallery", component: KeyFacts },
   ];
 
   return (
-    <div className="min-h-screen grid grid-cols-2">
-      <Canvas style={{ width: "100%", height: "100vh" }}>
-        <Space />
-        <ambientLight />
-        <Component position={[0, 0, 0]} scale={2} args={[1, 64, 64]} noClick />
-        <OrbitControls
-          enableZoom={false}
-          enablePan={false}
-          maxPolarAngle={Math.PI / 2}
-          minPolarAngle={Math.PI / 2}
-        />
-      </Canvas>
-      <div className="pt-24 h-screen gap-6 flex flex-col ">
-        <ul className="flex flex-row gap-8">
-          {tabs.map((tab) => (
-            <li
-              key={tab.tab}
-              onClick={() => setTab(tab)}
-              className="uppercase text-white/60 cursor-pointer text-sm tracking-wide hover:underline hover:underline-offset-2 hover:text-white"
-            >
-              {tab.tab}
+    <div>
+      <div className="min-h-screen grid grid-cols-2">
+        <Canvas style={{ width: "100%", height: "100vh" }}>
+          <Space />
+          <ambientLight />
+          <Component
+            position={[0, 0, 0]}
+            scale={2}
+            args={[1, 64, 64]}
+            noClick
+          />
+          <OrbitControls
+            enableZoom={false}
+            enablePan={false}
+            maxPolarAngle={Math.PI / 2}
+            minPolarAngle={Math.PI / 2}
+          />
+        </Canvas>
+        <div className="pt-24 h-screen gap-6 flex flex-col ">
+          <ul className="flex flex-row gap-8">
+            {tabs.map((tab) => (
+              <li
+                key={tab.tab}
+                onClick={() => setTab(tab)}
+                className="uppercase text-white/60 cursor-pointer text-sm tracking-wide hover:underline hover:underline-offset-2 hover:text-white"
+              >
+                {tab.tab}
+              </li>
+            ))}
+            <li>
+              <Link
+                className="uppercase text-white/60 cursor-pointer text-sm tracking-wide hover:underline hover:underline-offset-2 hover:text-white"
+                href="/itinerary"
+              >
+                Itinerary
+              </Link>
             </li>
-          ))}
-        </ul>
-        <h1 className="text-6xl font-bold uppercase tracking-widest">
-          {planet}
-        </h1>
-        <Tab.component planet={planet} />
+            <li>
+              <Link
+                className="uppercase text-white/60 cursor-pointer text-sm tracking-wide hover:underline hover:underline-offset-2 hover:text-white"
+                href="#gallery"
+              >
+                Gallery
+              </Link>
+            </li>
+          </ul>
+          <h1 className="text-6xl font-bold uppercase tracking-widest">
+            {planet}
+          </h1>
+          <Tab.component planet={planet} />
+        </div>
       </div>
+      <div id="gallery" className="grid "></div>
     </div>
   );
 }
