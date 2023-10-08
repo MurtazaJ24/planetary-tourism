@@ -1,0 +1,96 @@
+{
+  "mercury": {
+    "Average Temperature": "Extremely hot during the day (up to 800°F or 427°C) and cold at night (around -290°F or -180°C).",
+    "Days in a Year (Orbit around the Sun)": "Approximately 88 Earth days.",
+    "Number of Moons": "0 (No natural moons).",
+    "Surface": "Rocky and heavily cratered with some volcanic plains.",
+    "Formation": "Formed from the leftover materials of the early solar system.",
+    "Living Conditions": "Harsh; extreme temperature variations, no atmosphere, and intense solar radiation.",
+    "Axis of Rotation": "Almost no tilt (0.034°).",
+    "Length of Day": "About 176 Earth days (due to its slow rotation).",
+    "Time to Complete One Revolution": "About 88 Earth days."
+  },
+
+  "venus": {
+    "Average Temperature": "Extremely hot, with an average surface temperature of about 900°F (475°C).",
+    "Days in a Year (Orbit around the Sun)": "Approximately 225 Earth days.",
+    "Number of Moons": "0 (No natural moons).",
+    "Surface": "Covered in thick clouds, rocky terrain, and volcanic plains.",
+    "Formation": "Formed from the same materials as Earth but experienced a different evolutionary path.",
+    "Living Conditions": "Extremely inhospitable due to high temperatures, crushing atmospheric pressure, and acidic clouds.",
+    "Axis of Rotation": "Nearly upside-down with a retrograde rotation.",
+    "Length of Day": "About 116 Earth days.",
+    "Time to Complete One Revolution": "About 225 Earth days."
+  },
+
+  "earth": {
+    "Average Temperature": "Varies widely, with an average surface temperature of around 59°F (15°C).",
+    "Days in a Year (Orbit around the Sun)": "365.25 days.",
+    "Number of Moons": "1 (The Moon).",
+    "Surface": "Diverse, including oceans, continents, and polar ice caps.",
+    "Formation": "Believed to have formed from the accretion of dust and gas in the early solar system.",
+    "Living Conditions": "Ideal for life with a breathable atmosphere, moderate temperatures, and liquid water.",
+    "Axis of Rotation": "Tilted at approximately 23.5 degrees.",
+    "Length of Day": "Approximately 24 hours.",
+    "Time to Complete One Revolution": "365.25 days."
+  },
+
+  "mars": {
+    "Average Temperature": "Cold, with an average surface temperature of around -80°F (-62°C).",
+    "Days in a Year (Orbit around the Sun)": "Approximately 687 Earth days.",
+    "Number of Moons": "2 (Phobos and Deimos).",
+    "Surface": "Reddish, rocky terrain with canyons, volcanoes, and polar ice caps.",
+    "Formation": "Formed from the same materials as Earth but smaller.",
+    "Living Conditions": "Harsh, with a thin atmosphere, extreme cold, and intense radiation.",
+    "Axis of Rotation": "Tilted at about 25 degrees.",
+    "Length of Day": "About 24.6 Earth hours.",
+    "Time to Complete One Revolution": "About 687 Earth days."
+  },
+
+  "jupiter": {
+    "Average Temperature": "Extremely cold in its outer layers but hotter in its core.",
+    "Days in a Year (Orbit around the Sun)": "Approximately 12 Earth years.",
+    "Number of Moons": "Over 80 confirmed moons, including the four largest (Io, Europa, Ganymede, Callisto).",
+    "Surface": "No solid surface; composed mostly of gas and liquid.",
+    "Formation": "Likely formed from the gas and dust in the early solar nebula.",
+    "Living Conditions": "Uninhabitable due to extreme pressure, radiation, and lack of a solid surface.",
+    "Axis of Rotation": "Slightly tilted at about 3.1 degrees.",
+    "Length of Day": "About 9.9 Earth hours.",
+    "Time to Complete One Revolution": "About 12 Earth years."
+  },
+
+  "saturn": {
+    "Average Temperature": "Extremely cold in its outer layers but hotter in its core.",
+    "Days in a Year (Orbit around the Sun)": "Approximately 29.5 Earth years.",
+    "Number of Moons": "Over 80 confirmed moons, including Titan and Enceladus.",
+    "Surface": "No solid surface; composed mostly of gas and liquid.",
+    "Formation": "Likely formed from the gas and dust in the early solar nebula.",
+    "Living Conditions": "Uninhabitable due to extreme pressure, radiation, and lack of a solid surface.",
+    "Axis of Rotation": "Tilted at about 26.7 degrees.",
+    "Length of Day": "About 10.7 Earth hours.",
+    "Time to Complete One Revolution": "About 29.5 Earth years."
+  },
+
+  "uranus": {
+    "Average Temperature": "Extremely cold, with an average surface temperature of around -224°F (-140°C).",
+    "Days in a Year (Orbit around the Sun)": "Approximately 84 Earth years.",
+    "Number of Moons": "At least 27 confirmed moons, including Titania and Oberon.",
+    "Surface": "No solid surface; mostly composed of gas, ice, and a possible rocky core.",
+    "Formation": "Likely formed from the gas and dust in the early solar nebula.",
+    "Living Conditions": "Uninhabitable due to extreme cold, lack of a solid surface, and harsh winds.",
+    "Axis of Rotation": "Tilted at about 97.8 degrees, essentially rolling on its side.",
+    "Length of Day": "About 17.24 Earth hours.",
+    "Time to Complete One Revolution": "About 84 Earth years."
+  },
+  "neptune": {
+    "Average Temperature": "Extremely cold, with an average surface temperature of around -330°F (-201°C).",
+    "Days in a Year (Orbit around the Sun)": "Approximately 165 Earth years.",
+    "Number of Moons": "At least 14 confirmed moons, including Triton.",
+    "Surface": "No solid surface; mostly composed of gas, ice, and a possible rocky core.",
+    "Formation": "Likely formed from the gas and dust in the early solar nebula.",
+    "Living Conditions": "Uninhabitable due to extreme cold, lack of a solid surface, and harsh winds.",
+    "Axis of Rotation": "Tilted at about 28.3 degrees.",
+    "Length of Day": "About 16.11 Earth hours.",
+    "Time to Complete One Revolution": "About 165 Earth years."
+  }
+}

@@ -1,3 +1,4 @@
+"use client";
 import { Canvas, useThree } from "@react-three/fiber";
 import {
   OrbitControls,
@@ -6,11 +7,12 @@ import {
   Stars,
 } from "@react-three/drei";
 
-import { useRef } from "react";
+import { useRef, useState } from "react";
 
 import Planets from "@/components/Planets";
 import Space from "@/components/Space";
 import Sun from "@/components/Sun";
+import { Vector3 } from "three";
 
 export default function App() {
   return (
@@ -25,33 +27,32 @@ export default function App() {
 }
 
 function Scene() {
-  // const { camera } = useThree();
-  // const controls = useRef(null);
+  const [target, setTarget] = useState(new Vector3(0, 0, 0));
+  const controls = useRef();
 
-  // const onClick = (e) => {
-  //   const pos = e.eventObject.position;
-
-  //   camera.lookAt(pos);
-  //   camera.position.lerp(pos, 0.01);
-  //   camera.updateProjectionMatrix();
-  // };
+  const onClick = (e) => {
+    setTarget(e.eventObject.position);
+  };
 
   return (
     <>
       <Space />
       {/* <Stars count={1000000} depth={1000} /> */}
       <ambientLight />
-      <spotLight
-        intensity={0.2}
-        angle={0.2}
-        penumbra={1}
-        position={[5, 15, 10]}
-      />
-      <Sun />
-      <Planets />
+      <Planets onClick={onClick} />
+      {/* <pointLight color={0xffffff} intensity={400} decay={100}>
+        <mesh castShadow scale={80}>
+          <sphereGeometry args={[1, 64, 64]} />
+          <meshBasicMaterial color={0xffffff} />
+        </mesh>
+      </pointLight> */}
+      <Sun onClick={onClick} />
       <OrbitControls
+        ref={controls}
         maxPolarAngle={Math.PI / 2}
         minPolarAngle={Math.PI / 2}
+        target={target}
+
         // maxZoom={}
       />
     </>

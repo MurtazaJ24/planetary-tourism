@@ -91,3 +91,5 @@ export default function Planets(props) {
     </>
   );
 }
+
+export { Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, Neptune };

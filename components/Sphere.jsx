@@ -5,38 +5,43 @@ export default function Sphere({
   texture,
   rotateZ = 0,
   args,
+  onClick,
   noRotate = false,
+  noClick = false,
+  receiveShadow = true,
   ...props
 }) {
   const meshRef = useRef(null);
-  const { camera } = useThree();
   const [clicked, setClicked] = useState(false);
 
   useFrame((state, delta) => {
     meshRef.current.rotation.z = rotateZ;
     if (!noRotate) meshRef.current.rotation.y += delta * 0.1;
 
-    if (clicked) {
+    if (clicked && !noClick) {
       const pos = meshRef.current.position;
       state.camera.position.lerp(pos, 0.5);
       state.camera.lookAt(pos);
-      //   state.camera.updateProjectionMatrix();
+      state.camera.updateProjectionMatrix();
 
-      setClicked(false);
+      // setClicked(false);
     }
 
     return null;
   });
 
   return (
-    <mesh ref={meshRef} onClick={() => setClicked(true)} {...props}>
+    <mesh
+      ref={meshRef}
+      onClick={onClick}
+      receiveShadow={receiveShadow}
+      {...props}
+    >
       <sphereGeometry rotateZ={rotateZ} args={args} />
       <meshPhysicalMaterial
-        side
         map={texture}
-        clearcoat={0}
-        clearcoatRoughness={0}
-        roughness={1}
+        clearcoat={1}
+        roughness={0}
         metalness={0}
       />
     </mesh>
