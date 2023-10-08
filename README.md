@@ -1,10 +1,10 @@
 # TO INFINITY AND BEYOND
 
-Live Demo (https://planetary-tourism.vercel.app)
+(https://planetary-tourism.vercel.ap)[Live Demo]
 
 To Infinity And Beyond is a user-friendly online platform designed to provide an immersive experience for users interested in exploring the planets of our solar system. Leveraging the power of React-three-fiber and three.js, the website offers a visually stunning and interactive environment.
 
-##Key Features:
+## Key Features:
 
 1. Planetary Selection: The main page showcases all eight planets of our solar system suspended in space. Users can intuitively click on any planet to initiate a closer exploration.
 
@@ -20,7 +20,7 @@ To Infinity And Beyond is a user-friendly online platform designed to provide an
 
 7. To-Scale Representation: All planets are rendered to their actual scale, providing users with an accurate sense of the relative sizes and distances within our solar system.
 
-##Development Stack:
+## Development Stack:
 
 - React-three-fiber: A powerful library for creating 3D content in React applications.
 
@@ -35,7 +35,7 @@ To Infinity And Beyond is a user-friendly online platform designed to provide an
 
 - Tailwind CSS: A utility-first CSS framework that allows for rapid styling and customization. It's particularly efficient for building modern, responsive web applications.
 
-##Future Enhancements:
+## Future Enhancements:
 
 - Augmented Reality (AR) Integration: The project may expand to incorporate AR features, allowing users to experience planets in their real-world environment through their devices' cameras.
 
