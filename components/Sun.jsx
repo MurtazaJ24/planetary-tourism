@@ -12,8 +12,7 @@ export default function Sun(props) {
       position={[0, 0, 0]}
       args={[1, 64, 64]}
       noRotate
-      castShadow={false}
-      recieveShadow={false}
+      planet={null}
       scale={80}
       texture={texture}
       {...props}

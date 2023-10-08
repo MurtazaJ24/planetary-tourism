@@ -31,21 +31,21 @@ function Saturn({ onClick, position, ...props }) {
   }, []);
 
   return (
-    <group position={position}>
+    <group position={position} onClick={onClick} userData="saturn">
       {/* Saturn planet */}
       <Sphere
         texture={planetTexture}
         noRotate
         // position={[560, 0, 0]}
+        planet="saturn"
         scale={27}
         rotateZ={toRadians(27)}
-        onClick={onClick}
         {...props}
       />
 
       {/* Saturn's rings as a rotating plane */}
       <group ref={saturnGroup}>
-        <mesh ref={ringRef}>
+        <mesh ref={ringRef} castShadow={false} receiveShadow={false}>
           <circleGeometry args={[60, 120]} />
           <meshBasicMaterial
             map={ringTexture}

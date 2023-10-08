@@ -1,0 +1,81 @@
+[
+  {
+    "url": "https://science.nasa.gov/mercury/",
+    "description": "General overview, key facts and itinerary planning for Mercury"
+  },
+
+  {
+    "url": "https://science.nasa.gov/venus/",
+    "description": "General overview, key facts and itinerary planning for Venus"
+  },
+
+  {
+    "url": "https://science.nasa.gov/earth/facts/",
+    "description": "General overview, key facts and itinerary planning for Earth"
+  },
+
+  {
+    "url": "https://science.nasa.gov/mars/",
+    "description": "General overview, key facts and itinerary planning for Mars"
+  },
+
+  {
+    "url": "https://science.nasa.gov/jupiter/",
+    "description": "General overview, key facts and itinerary planning for Jupiter"
+  },
+
+  {
+    "url": "https://science.nasa.gov/saturn/",
+    "description": "General overview, key facts and itinerary planning for Saturn"
+  },
+
+  {
+    "url": "https://science.nasa.gov/uranus/",
+    "description": "General overview, key facts and itinerary planning for Uranus"
+  },
+
+  {
+    "url": "https://science.nasa.gov/neptune/",
+    "description": "General overview, key facts and itinerary planning for Neptune"
+  },
+
+  {
+    "url": "https://www.solarsystemscope.com/textures/",
+    "description": "Textures for each planet for rendering in three.js"
+  },
+
+  {
+    "url": "https://lucide.dev/",
+    "description": "Website for icons used in the website (fullscreen, music, text-to-speech icons)"
+  },
+
+  {
+    "url": "https://www.deviantart.com/colourness/art/Saturn-s-Rings-From-JHT-s-Planet-Pixel-Emporium-977223531",
+    "description": "Texture used for Saturn's rings for rendering in three.js"
+  },
+
+  {
+    "url": "https://threejs.org/",
+    "description": "Three.js for rendering 3D objects and interacting with them"
+  },
+
+  {
+    "url": "https://docs.pmnd.rs/react-three-fiber",
+    "description": "React-three-fiber is a React renderer for three.js. Used to build scenes declaratively with reusable, self-contained components that react to state and readily interact and participate in React's ecosystem."
+  },
+
+  {
+    "url": "https://www.youtube.com/watch?v=Pswx6OQp1Ks&amp;pp=ygUTZGVzdHJveWVyIG9mIHdvcmxkcw%3D%3D",
+    "description": "Music used in the landing page titled “Destroyer of Worlds”"
+  },
+
+  {
+    "url": "https://genny.lovo.ai/",
+    "description": "AI for text-to-speech converting purposes used in data for each planet"
+  },
+
+  {
+    "url": "https://www.narakeet.com/languages/",
+    "description": "AI for text-to-speech converting purposes used in data for each planet"
+  }
+]

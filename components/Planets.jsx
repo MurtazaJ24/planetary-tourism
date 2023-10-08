@@ -10,7 +10,13 @@ function Mercury(props) {
   texture.generateMipmaps = true;
   texture.minFilter = LinearMipMapLinearFilter;
   return (
-    <Sphere texture={texture} scale={1} rotateZ={toRadians(0.1)} {...props} />
+    <Sphere
+      texture={texture}
+      scale={1}
+      planet="mercury"
+      rotateZ={toRadians(0.1)}
+      {...props}
+    />
   );
 }
 
@@ -19,7 +25,13 @@ function Venus(props) {
   texture.generateMipmaps = true;
   texture.minFilter = LinearMipMapLinearFilter;
   return (
-    <Sphere texture={texture} scale={2.5} rotateZ={toRadians(177)} {...props} />
+    <Sphere
+      texture={texture}
+      scale={2.5}
+      planet="venus"
+      rotateZ={toRadians(177)}
+      {...props}
+    />
   );
 }
 
@@ -28,7 +40,13 @@ function Earth(props) {
   texture.generateMipmaps = true;
   texture.minFilter = LinearMipMapLinearFilter;
   return (
-    <Sphere texture={texture} scale={3} rotateZ={toRadians(23.44)} {...props} />
+    <Sphere
+      texture={texture}
+      scale={3}
+      planet="earth"
+      rotateZ={toRadians(23.44)}
+      {...props}
+    />
   );
 }
 
@@ -37,7 +55,13 @@ function Mars(props) {
   texture.generateMipmaps = true;
   texture.minFilter = LinearMipMapLinearFilter;
   return (
-    <Sphere texture={texture} scale={1.5} rotateZ={toRadians(25)} {...props} />
+    <Sphere
+      texture={texture}
+      scale={1.5}
+      planet="mars"
+      rotateZ={toRadians(25)}
+      {...props}
+    />
   );
 }
 
@@ -46,7 +70,13 @@ function Jupiter(props) {
   texture.generateMipmaps = true;
   texture.minFilter = LinearMipMapLinearFilter;
   return (
-    <Sphere texture={texture} scale={33} rotateZ={toRadians(3)} {...props} />
+    <Sphere
+      texture={texture}
+      scale={33}
+      planet="jupiter"
+      rotateZ={toRadians(3)}
+      {...props}
+    />
   );
 }
 
@@ -55,7 +85,13 @@ function Uranus(props) {
   texture.generateMipmaps = true;
   texture.minFilter = LinearMipMapLinearFilter;
   return (
-    <Sphere texture={texture} scale={12} rotateZ={toRadians(98)} {...props} />
+    <Sphere
+      texture={texture}
+      scale={12}
+      planet="uranus"
+      rotateZ={toRadians(98)}
+      {...props}
+    />
   );
 }
 
@@ -64,7 +100,13 @@ function Neptune(props) {
   texture.generateMipmaps = true;
   texture.minFilter = LinearMipMapLinearFilter;
   return (
-    <Sphere texture={texture} scale={11.5} rotateZ={toRadians(30)} {...props} />
+    <Sphere
+      texture={texture}
+      scale={11.5}
+      planet="neptune"
+      rotateZ={toRadians(30)}
+      {...props}
+    />
   );
 }
 

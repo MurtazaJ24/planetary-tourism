@@ -9,6 +9,7 @@ export default function Sphere({
   noRotate = false,
   noClick = false,
   receiveShadow = true,
+  planet,
   ...props
 }) {
   const meshRef = useRef(null);
@@ -25,6 +26,7 @@ export default function Sphere({
       ref={meshRef}
       onClick={onClick}
       receiveShadow={receiveShadow}
+      userData={planet}
       {...props}
     >
       <sphereGeometry rotateZ={rotateZ} args={args} />

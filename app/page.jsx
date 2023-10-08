@@ -43,16 +43,31 @@ export default function page() {
           To Infinity and Beyond
         </h1>
 
-        <Link
-          href="/explore"
-          className="bg-transparent border border-white px-4 py-2 uppercase cursor-pointer"
-        >
-          Explore
-        </Link>
+        <div className="flex flex-row gap-5">
+          <Link
+            href="/explore"
+            className="bg-transparent border border-white px-4 py-2 uppercase cursor-pointer"
+          >
+            Explore
+          </Link>
+          <Link
+            href="/itinerary"
+            className="bg-transparent border border-white px-4 py-2 uppercase cursor-pointer"
+          >
+            Itinerary
+          </Link>
+        </div>
       </div>
       <button onClick={toggleAudio} className="absolute z-10 right-16 bottom-6">
         {playing ? <Volume2Icon /> : <VolumeXIcon />}
       </button>
+
+      <Link
+        href="/resources"
+        className="bg-transparent px-4 py-2 cursor-pointer absolute z-10 left-6 bottom-6"
+      >
+        Resources
+      </Link>
     </div>
   );
 }
