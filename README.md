@@ -1,6 +1,6 @@
 # TO INFINITY AND BEYOND
 
-(https://planetary-tourism.vercel.ap)[Live Demo]
+[Live Demo](https://planetary-tourism.vercel.app)
 
 To Infinity And Beyond is a user-friendly online platform designed to provide an immersive experience for users interested in exploring the planets of our solar system. Leveraging the power of React-three-fiber and three.js, the website offers a visually stunning and interactive environment.
 
