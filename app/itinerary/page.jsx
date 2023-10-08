@@ -30,14 +30,11 @@ export default function Itinerary() {
   const CurrentPlanetComponent = planets[currentPlanetIndex].component;
 
   return (
-    <div className="container flex max-w-7xl pt-10 pb-4 flex-col h-screen mx-auto">
+    <div className="flex px-16 pt-10 pb-4 flex-col h-screen mx-auto">
       <h1 className="text-7xl font-bold mb-4 text-center">
         Space Tourism Itinerary: "Venusian Enigma Expedition"
       </h1>
       <div className="flex flex-1 gap-10 relative justify-center items-center p-4 overflow-y-auto pr-12 py-8 ">
-        <span className="absolute text-8xl top-0 -left-4">
-          {`${currentPlanetIndex + 1}`.padStart(2, "0")}
-        </span>
         <CurrentPlanetComponent />
       </div>
       <div className="flex justify-between mt-4">

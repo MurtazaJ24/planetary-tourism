@@ -1,40 +1,54 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# TO INFINITY AND BEYOND
 
-## Getting Started
+Live Demo (https://planetary-tourism.vercel.app)
 
-First, run the development server:
+To Infinity And Beyond is a user-friendly online platform designed to provide an immersive experience for users interested in exploring the planets of our solar system. Leveraging the power of React-three-fiber and three.js, the website offers a visually stunning and interactive environment.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+##Key Features:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+1. Planetary Selection: The main page showcases all eight planets of our solar system suspended in space. Users can intuitively click on any planet to initiate a closer exploration.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+2. Interactive 3D Visualization: The website employs React-three-fiber and three.js to render a high-fidelity 3D representation of the selected planet. This allows users to interactively manipulate the view, zooming in and out for a detailed examination.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+3. Planetary Itinerary: The website offers a guided tour itinerary, allowing users to embark on a virtual journey to visit all eight planets in the solar system. This feature provides a structured and educational experience, guiding users through each celestial body.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+4. Focus Mode: Upon clicking on a planet, it comes into sharp focus, dominating the screen. This ensures a comprehensive examination of the planet's surface, features, and surrounding environment.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+5. Informative Sidebar: Alongside the focused planet, a dynamically updated sidebar provides detailed information about the selected celestial body. This includes facts, statistics, and other relevant data, enhancing the educational aspect of the experience.
 
-## Learn More
+6. Multi-Platform Compatibility: The website is designed to be accessible across various devices and screen sizes, ensuring a seamless experience for users on desktops, laptops, tablets, and mobile phones (coming soon).
 
-To learn more about Next.js, take a look at the following resources:
+7. To-Scale Representation: All planets are rendered to their actual scale, providing users with an accurate sense of the relative sizes and distances within our solar system.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+##Development Stack:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- React-three-fiber: A powerful library for creating 3D content in React applications.
 
-## Deploy on Vercel
+- three.js: A popular JavaScript library for 3D graphics, used in conjunction with
+  React-three-fiber for rendering planetary environments.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- React: A widely-used JavaScript library for building user interfaces.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- HTML/CSS: Standard technologies for structuring and styling the web pages.
+
+- Next.js: A popular React framework for building production-ready web applications. It enables server-side rendering, static site generation, and other powerful features that enhance performance.
+
+- Tailwind CSS: A utility-first CSS framework that allows for rapid styling and customization. It's particularly efficient for building modern, responsive web applications.
+
+##Future Enhancements:
+
+- Augmented Reality (AR) Integration: The project may expand to incorporate AR features, allowing users to experience planets in their real-world environment through their devices' cameras.
+
+- User Authentication and Customization: Implementing user accounts would enable features like saving favourite planets, tracking progress, and personalising the experience.
+
+- Social Integration: Users might be given the option to share their experiences on social media platforms, fostering community engagement and outreach.
+
+The Space Tourism Website stands at the forefront of interactive educational platforms, providing a captivating journey through our solar system for users of all ages and levels of astronomical interest.
+
+To run this project locally, clone the repository and run the following commands:
+
+1. `git clone https://github.com/murtazaj24/planetary-tourism`
+2. `npm install`
+3. `npm run dev`
+
+Yayy! You have successfully run planetary-tourism on your local machine
