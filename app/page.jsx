@@ -2,15 +2,24 @@
 
 import LandingStars from "@/components/LandingStars";
 import { Canvas, useThree } from "@react-three/fiber";
-import { useRef, useEffect } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
-import { AudioLoader, AudioListener } from "three";
-import { useRouter } from "next/navigation";
+import { AudioListener } from "three";
 import { Volume2Icon } from "lucide-react";
 import { VolumeXIcon } from "lucide-react";
 
 export default function page() {
+  const [playing, setPlaying] = useState(false);
+
   const audio = new Audio("/bg.mp3");
+
+  useEffect(() => {
+    audio.addEventListener("playing", () => setPlaying(true));
+    audio.addEventListener("pause", () => setPlaying(false));
+  }, []);
+
+  const toggleAudio = async () =>
+    playing ? audio.pause() : await audio.play();
 
   return (
     <div className="relative grid place-items-center w-full min-h-screen">
@@ -41,11 +50,8 @@ export default function page() {
           Explore
         </Link>
       </div>
-      <button
-        onClick={() => (audio.paused ? audio.play() : audio.play())}
-        className="absolute z-10 right-16 bottom-6"
-      >
-        {audio.paused ? <VolumeXIcon /> : <Volume2Icon />}
+      <button onClick={toggleAudio} className="absolute z-10 right-16 bottom-6">
+        {playing ? <Volume2Icon /> : <VolumeXIcon />}
       </button>
     </div>
   );
@@ -53,8 +59,6 @@ export default function page() {
 
 function BackgroundAudio({ audio, children }) {
   const audioListener = new AudioListener();
-  const audioLoader = new AudioLoader();
-  const router = useRouter();
   const { camera } = useThree();
 
   useEffect(() => {
@@ -72,7 +76,7 @@ function BackgroundAudio({ audio, children }) {
       camera.remove(audioListener);
       audio.pause();
     };
-  }, [camera, audio, audioListener, router]);
+  }, [camera, audio, audioListener]);
 
   return <>{children}</>;
 }
