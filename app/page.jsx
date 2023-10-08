@@ -9,18 +9,6 @@ import { Volume2Icon } from "lucide-react";
 import { VolumeXIcon } from "lucide-react";
 
 export default function page() {
-  const [playing, setPlaying] = useState(false);
-
-  const audio = new Audio("/bg.mp3");
-
-  useEffect(() => {
-    audio.addEventListener("playing", () => setPlaying(true));
-    audio.addEventListener("pause", () => setPlaying(false));
-  }, []);
-
-  const toggleAudio = async () =>
-    playing ? audio.pause() : await audio.play();
-
   return (
     <div className="relative grid place-items-center w-full min-h-screen">
       <Canvas
@@ -33,10 +21,8 @@ export default function page() {
           rotation: [0, 0, 0],
         }}
       >
-        <BackgroundAudio audio={audio}>
-          <ambientLight />
-          <LandingStars radius={0} depth={500} factor={5} />
-        </BackgroundAudio>
+        <ambientLight />
+        <LandingStars radius={0} depth={500} factor={5} />
       </Canvas>
       <div className="z-10 flex flex-col gap-10 items-center">
         <h1 className="text-7xl uppercase text-[rgb(238,238,238)] tracking-wider font-light">
@@ -58,9 +44,6 @@ export default function page() {
           </Link>
         </div>
       </div>
-      <button onClick={toggleAudio} className="absolute z-10 right-16 bottom-6">
-        {playing ? <Volume2Icon /> : <VolumeXIcon />}
-      </button>
 
       <Link
         href="/resources"
@@ -70,28 +53,4 @@ export default function page() {
       </Link>
     </div>
   );
-}
-
-function BackgroundAudio({ audio, children }) {
-  const audioListener = new AudioListener();
-  const { camera } = useThree();
-
-  useEffect(() => {
-    camera.add(audioListener);
-    audio.loop = true;
-    audio.volume = 0.8; // Adjust the volume as needed
-    audio.play();
-
-    // Stop audio when navigating to other pages
-    // router.events.on("routeChangeStart", () => {
-    //   audio.pause();
-    // });
-
-    return () => {
-      camera.remove(audioListener);
-      audio.pause();
-    };
-  }, [camera, audio, audioListener]);
-
-  return <>{children}</>;
 }
