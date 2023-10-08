@@ -12,20 +12,10 @@ export default function Sphere({
   ...props
 }) {
   const meshRef = useRef(null);
-  const [clicked, setClicked] = useState(false);
 
   useFrame((state, delta) => {
     meshRef.current.rotation.z = rotateZ;
     if (!noRotate) meshRef.current.rotation.y += delta * 0.1;
-
-    if (clicked && !noClick) {
-      const pos = meshRef.current.position;
-      state.camera.position.lerp(pos, 0.5);
-      state.camera.lookAt(pos);
-      state.camera.updateProjectionMatrix();
-
-      // setClicked(false);
-    }
 
     return null;
   });

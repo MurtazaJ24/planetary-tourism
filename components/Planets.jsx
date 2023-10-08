@@ -1,6 +1,7 @@
-import { LinearMipMapLinearFilter } from "three";
+import { CircleGeometry, DoubleSide, LinearMipMapLinearFilter } from "three";
 import Sphere from "./Sphere";
 import { useKeyboardControls, useTexture } from "@react-three/drei";
+import Saturn from "./Saturn";
 
 const toRadians = (angle) => (angle * Math.PI) / 180;
 
@@ -49,15 +50,6 @@ function Jupiter(props) {
   );
 }
 
-function Saturn(props) {
-  const texture = useTexture("/saturn_8k.jpg");
-  texture.generateMipmaps = true;
-  texture.minFilter = LinearMipMapLinearFilter;
-  return (
-    <Sphere texture={texture} scale={27} rotateZ={toRadians(27)} {...props} />
-  );
-}
-
 function Uranus(props) {
   const texture = useTexture("/uranus_2k.jpg");
   texture.generateMipmaps = true;
@@ -77,7 +69,6 @@ function Neptune(props) {
 }
 
 export default function Planets(props) {
-  //   const forwardPressed = useKeyboardControls((state) => state.forward);
   return (
     <>
       <Mercury position={[150, 0, 0]} args={[1, 64, 64]} {...props} />

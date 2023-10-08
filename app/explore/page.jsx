@@ -15,14 +15,31 @@ import Sun from "@/components/Sun";
 import { Vector3 } from "three";
 
 export default function App() {
+  const canvasRef = useRef();
+
+  const toggleFullScreen = () => {
+    if (canvasRef.current) {
+      if (document.fullscreenElement) {
+        // Exit full screen if it's already in full screen mode
+        document.exitFullscreen();
+      } else {
+        // Request full screen if not in full screen mode
+        canvasRef.current.requestFullscreen();
+      }
+    }
+  };
+
   return (
-    <Canvas
-      style={{ width: "100%", height: "100vh" }}
-      frameloop="always"
-      camera={{ position: [0, 0, 300], fov: 45, far: 10000 }}
-    >
-      <Scene />
-    </Canvas>
+    <div className="relative">
+      <Canvas
+        ref={canvasRef}
+        style={{ width: "100%", height: "100vh" }}
+        frameloop="always"
+        camera={{ position: [0, 0, 300], fov: 45, far: 10000 }}
+      >
+        <Scene />
+      </Canvas>
+    </div>
   );
 }
 
@@ -31,28 +48,22 @@ function Scene() {
   const controls = useRef();
 
   const onClick = (e) => {
+    console.log(controls.current.target);
     setTarget(e.eventObject.position);
   };
 
   return (
     <>
       <Space />
-      {/* <Stars count={1000000} depth={1000} /> */}
       <ambientLight />
       <Planets onClick={onClick} />
-      {/* <pointLight color={0xffffff} intensity={400} decay={100}>
-        <mesh castShadow scale={80}>
-          <sphereGeometry args={[1, 64, 64]} />
-          <meshBasicMaterial color={0xffffff} />
-        </mesh>
-      </pointLight> */}
       <Sun onClick={onClick} />
       <OrbitControls
         ref={controls}
         maxPolarAngle={Math.PI / 2}
         minPolarAngle={Math.PI / 2}
         target={target}
-
+        zoom0={1}
         // maxZoom={}
       />
     </>

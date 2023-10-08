@@ -8,7 +8,7 @@
     "Living Conditions": "Harsh; extreme temperature variations, no atmosphere, and intense solar radiation.",
     "Axis of Rotation": "Almost no tilt (0.034°).",
     "Length of Day": "About 176 Earth days (due to its slow rotation).",
-    "Time to Complete One Revolution": "About 88 Earth days."
+    "overview": "Mercury, the smallest planet closest to the Sun, is just a bit larger than our Moon and covered in countless craters. From its surface, the Sun looks over three times larger than on Earth, with sunlight 11 times brighter. Though not the hottest (that's Venus), Mercury earns its name as the fastest planet, orbiting the Sun in a speedy 88 Earth days. Swift and intense, just like the Roman god it's named after."
   },
 
   "venus": {
@@ -20,7 +20,7 @@
     "Living Conditions": "Extremely inhospitable due to high temperatures, crushing atmospheric pressure, and acidic clouds.",
     "Axis of Rotation": "Nearly upside-down with a retrograde rotation.",
     "Length of Day": "About 116 Earth days.",
-    "Time to Complete One Revolution": "About 225 Earth days."
+    "overview": "Venus, often called Earth's twin, is a cloud-covered planet with a hellish surface. Its thick atmosphere traps heat, making it hot enough to melt lead. Unlike Earth, Venus spins backward, has a longer day than year, and lacks seasons. Once a potential ocean world, a runaway greenhouse effect turned it into a barren, rocky landscape. The surface, scorched by extreme temperatures and pressures, is inhospitable for life today— a definite \"no.\""
   },
 
   "earth": {
@@ -32,7 +32,7 @@
     "Living Conditions": "Ideal for life with a breathable atmosphere, moderate temperatures, and liquid water.",
     "Axis of Rotation": "Tilted at approximately 23.5 degrees.",
     "Length of Day": "Approximately 24 hours.",
-    "Time to Complete One Revolution": "365.25 days."
+    "overview": "While Earth is only the fifth largest planet in the solar system, it is the only world in our solar system with liquid water on the surface. Just slightly larger than nearby Venus, Earth is the biggest of the four planets closest to the Sun, all of which are made of rock and metal.     Earth is the only planet in the Solar System whose English name does not come from Greek or Roman mythology. The name was taken from Old English and Germanic. It simply means \"the ground.\" There are, of course, many names for our planet in the thousands of languages spoken by the people of the third planet from the Sun."
   },
 
   "mars": {
@@ -44,7 +44,7 @@
     "Living Conditions": "Harsh, with a thin atmosphere, extreme cold, and intense radiation.",
     "Axis of Rotation": "Tilted at about 25 degrees.",
     "Length of Day": "About 24.6 Earth hours.",
-    "Time to Complete One Revolution": "About 687 Earth days."
+    "overview": "Mars is no place for the faint-hearted. It’s dry, rocky, and bitter cold. The fourth planet from the Sun, Mars is one of Earth's two closest planetary neighbors (Venus is the other). Mars is one of the easiest planets to spot in the night sky – it looks like a bright red point of light. Despite being inhospitable to humans, robotic explorers – like NASA's Perseverance rover – are serving as pathfinders to eventually get humans to the surface of the Red Planet."
   },
 
   "jupiter": {
@@ -56,7 +56,7 @@
     "Living Conditions": "Uninhabitable due to extreme pressure, radiation, and lack of a solid surface.",
     "Axis of Rotation": "Slightly tilted at about 3.1 degrees.",
     "Length of Day": "About 9.9 Earth hours.",
-    "Time to Complete One Revolution": "About 12 Earth years."
+    "overview": "Jupiter is the fifth planet from our Sun and is, by far, the largest planet in the solar system – more than twice as massive as all the other planets combined. Jupiter's stripes and swirls are actually cold, windy clouds of ammonia and water, floating in an atmosphere of hydrogen and helium. Jupiter’s iconic Great Red Spot is a giant storm bigger than Earth that has raged for hundreds of years. Jupiter is named for the king of the ancient Roman gods.​"
   },
 
   "saturn": {
@@ -68,7 +68,7 @@
     "Living Conditions": "Uninhabitable due to extreme pressure, radiation, and lack of a solid surface.",
     "Axis of Rotation": "Tilted at about 26.7 degrees.",
     "Length of Day": "About 10.7 Earth hours.",
-    "Time to Complete One Revolution": "About 29.5 Earth years."
+    "overview": "Saturn is the sixth planet from the Sun and the second largest planet in our solar system. Adorned with a dazzling system of icy rings, Saturn is unique among the planets. It is not the only planet to have rings, but none are as spectacular or as complex as Saturn's. Like fellow gas giant Jupiter, Saturn is a massive ball made mostly of hydrogen and helium. The farthest planet from Earth discovered by the unaided human eye, Saturn has been known since ancient times. The planet is named for the Roman god of agriculture and wealth, who was also the father of Jupiter."
   },
 
   "uranus": {
@@ -80,7 +80,7 @@
     "Living Conditions": "Uninhabitable due to extreme cold, lack of a solid surface, and harsh winds.",
     "Axis of Rotation": "Tilted at about 97.8 degrees, essentially rolling on its side.",
     "Length of Day": "About 17.24 Earth hours.",
-    "Time to Complete One Revolution": "About 84 Earth years."
+    "overview": "Uranus, a cold and windy giant, rotates at an unusual 90-degree angle, making it seem like it's spinning on its side. Its blue-green hue comes from methane, and its atmosphere is mostly hydrogen and helium with water, ammonia, and methane. Discovered by William Herschel, it was initially considered \"Georgium Sidus\" but was later named Uranus after the Greek god of the sky."
   },
   "neptune": {
     "Average Temperature": "Extremely cold, with an average surface temperature of around -330°F (-201°C).",
@@ -91,6 +91,6 @@
     "Living Conditions": "Uninhabitable due to extreme cold, lack of a solid surface, and harsh winds.",
     "Axis of Rotation": "Tilted at about 28.3 degrees.",
     "Length of Day": "About 16.11 Earth hours.",
-    "Time to Complete One Revolution": "About 165 Earth years."
+    "overview": "Neptune, the eighth and farthest major planet, is a cold, dark world with supersonic winds. More than 30 times Earth's distance from the Sun, it completed its first 165-year orbit in 2011. Its rich blue color, from methane in its atmosphere, is a result of absorbing red light and reflecting blue. Discovered through mathematical calculations prompted by Uranus' orbit, it's named after the Roman god of the sea."
   }
 }
