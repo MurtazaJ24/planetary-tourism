@@ -55,9 +55,14 @@ Yayy! You have successfully run planetary-tourism on your local machine
 
 ## Team Members:
 
-Astha Singh
-Aishwarya Patil
-Murtaza Jambughodawala
-Aarul Koul
-Mohit Khade
-Keshav Jha
+1. Astha Singh
+
+2. Aishwarya Patil
+
+3. Murtaza Jambughodawala
+
+4. Aarul Koul
+
+5. Mohit Khade
+
+6. Keshav Jha
