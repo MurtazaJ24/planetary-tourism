@@ -52,3 +52,12 @@ To run this project locally, clone the repository and run the following commands
 3. `npm run dev`
 
 Yayy! You have successfully run planetary-tourism on your local machine
+
+## Team Members:
+
+Astha Singh
+Aishwarya Patil
+Murtaza Jambughodawala
+Aarul Koul
+Mohit Khade
+Keshav Jha
